@@ -12,28 +12,55 @@ namespace GoldenSquirrel.Controllers
         // GET: Game
         public ActionResult Index()
         {
-            Game g = new Game()
+            Game elder = new Game()
             {
                 Number = 1,
-                Image = @"https://target.scene7.com/is/image/Target/GUEST_171cec78-3b75-4b09-9d8a-ee62d58c121b?wid=488&hei=488&fmt=pjpeg"
+                Image = @"https://pbs.twimg.com/profile_images/1087746536665243649/hO-51lBr.jpg"
             };
-            Game a = new Game()
+            Game gacorn = new Game()
             {
                 Number = 2,
-                Image = @"http://clipart-library.com/data_images/306851.jpg"
-            };
-            Game t = new Game()
-            {
-                Number = 3,
-                Image = @"https://previews.123rf.com/images/avelkrieg/avelkrieg1303/avelkrieg130300026/18203835-illustration-of-a-cartoon-tree-on-a-patch-of-grass.jpg"
-            };
-            Game p = new Game()
-            {
-                Number = 4,
-                Image = @"https://i.ytimg.com/vi/rK--l8XSSV0/hqdefault.jpg"
+                Image = @"https://media.glassdoor.com/sqll/192597/golden-acorn-casino-squarelogo-1462369646556.png"
             };
 
-            return View();
+            Game spins = new Game()
+            {
+                Number = 3,
+                Image = @"https://media1.tenor.com/images/df0c7e27c55ba3ade8f0ebe78718be76/tenor.gif?itemid=7442174"
+            };
+            Game acorn = new Game()
+            {
+                Number = 4,
+                Image = @"http://clipart-library.com/data_images/306858.png"
+            };
+            Game tree = new Game()
+            {
+                Number = 5,
+                Image = @"http://www.clker.com/cliparts/Z/Q/1/5/y/e/green-tree-md.png"
+            };
+            Game leaf = new Game()
+            {
+                Number = 6,
+                Image = @"https://cdn.shopify.com/s/files/1/2040/0303/products/Pretty_Paint_Art_Cartoon_Leaf_Leaves_-_Fall_11_96229170_200x200.jpg?v=1508507362"
+            };
+            Game bsquir = new Game()
+            {
+                Number = 7,
+                Image = @"https://i.pinimg.com/originals/d9/70/89/d970898b49b3198b6f57575227aba224.jpg"
+            };
+
+
+            List<Game> symbols = new List<Game>();
+            symbols.Add(elder);
+            symbols.Add(gacorn);
+            symbols.Add(spins);
+            symbols.Add(acorn);
+            symbols.Add(tree);
+            symbols.Add(leaf);
+            symbols.Add(bsquir);
+
+
+            return View(symbols);
         }
     }
 }

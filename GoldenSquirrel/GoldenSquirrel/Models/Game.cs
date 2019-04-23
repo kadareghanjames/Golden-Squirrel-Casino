@@ -7,8 +7,8 @@ namespace GoldenSquirrel.Models
 {
     public class Game
     {
-        public int Number { get; set; } //Number associated to picture to see if numbers match in each row or not
+       public int Number { get; set; }
+       public string Image { get; set; }
 
-        public string Image { get; set; }
     }
 }
