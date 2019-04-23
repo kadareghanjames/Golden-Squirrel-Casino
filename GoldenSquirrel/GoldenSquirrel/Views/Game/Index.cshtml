@@ -1,40 +1,53 @@
-﻿
+﻿@model IEnumerable<GoldenSquirrel.Models.Game>
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>The Golden Squirrel</h2>
 
-<div class="card-group">
-    <div class="card">
-        <img class="card-img-top" src="https://pbs.twimg.com/profile_images/1087746536665243649/hO-51lBr.jpg" alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
+int test=0;
+test = math.floor(math.random() * 7) + 1;
+@foreach (var symbol in Model)
+{
+
+<div style="float:left; margin:15px;">
+    @if (test == symbol.Number)
+    {
+
+    }
 </div>
-<div class="card-group">
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-</div>
-<div class="card-group">
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-    </div>
-</div>
+        }
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src=@Model.Image alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src=@Model.Image alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+            </div>
+        </div>
