@@ -38,12 +38,42 @@ namespace GoldenSquirrelCasino
 
         private void Spin_Click(object sender, RoutedEventArgs e)
         {
+            List<int> n = new List<int>(); 
             for (int i = 1; i < 10; i++)
             {
+                int image = 0; 
                 Random r = new Random();
-                string image = r.Next(0, 8).ToString();
+                image = r.Next(0, 8);
+                n.Add(image);
+                MessageBox.Show(image.ToString());
+            }
+
+            if(n[0] == n[1] && n[1] == n[2])
+            {
 
             }
+
+            if (n[3] == n[4] && n[4] == n[5])
+            {
+
+            }
+
+            if (n[6] == n[7] && n[7] == n[8])
+            {
+
+            }
+
+            if (n[0] == n[4] && n[4] == n[8])
+            {
+
+            }
+
+            if (n[6] == n[4] && n[4] == n[2])
+            {
+
+            }
+
+
         }
 
         private void BtnPayTable_Click(object sender, RoutedEventArgs e)
