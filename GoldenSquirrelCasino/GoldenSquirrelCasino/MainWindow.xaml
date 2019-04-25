@@ -13,7 +13,7 @@
             <ColumnDefinition Width="359*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="BtnSpin" Content="Spin" HorizontalAlignment="Left" Margin="196.017,36,0,0" VerticalAlignment="Top" Width="134" Height="58" Click="Spin_Click" Grid.Column="2"/>
-        <Image Source ="https://pbs.twimg.com/profile_images/1087746536665243649/hO-51lBr.jpg" x:Name="Img1" HorizontalAlignment="Left" Height="100" Margin="54,36,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="Img1" HorizontalAlignment="Left" Height="100" Margin="54,36,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img2" HorizontalAlignment="Left" Height="100" Margin="219,36,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img3" HorizontalAlignment="Left" Height="100" Margin="49,36,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Image x:Name="Img4" HorizontalAlignment="Left" Height="100" Margin="54,177,0,0" VerticalAlignment="Top" Width="100"/>
@@ -22,7 +22,7 @@
         <Image x:Name="Img7" HorizontalAlignment="Left" Height="100" Margin="54,309,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img8" HorizontalAlignment="Left" Height="100" Margin="219,309,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img9" HorizontalAlignment="Left" Height="100" Margin="49,309,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="184.017,167,0,0" VerticalAlignment="Top" Width="146" Height="45" Grid.Column="2">
+        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="184.017,167,0,0" VerticalAlignment="Top" Width="146" Height="45" Grid.Column="2" SelectionChanged="CboBet_SelectionChanged">
             <ComboBoxItem Content="$1" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Two" Content="$2" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Three" Content="$3" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
