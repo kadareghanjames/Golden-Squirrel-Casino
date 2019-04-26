@@ -22,15 +22,16 @@
         <Image x:Name="Img7" HorizontalAlignment="Left" Height="100" Margin="54,309,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img8" HorizontalAlignment="Left" Height="100" Margin="219,309,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="Img9" HorizontalAlignment="Left" Height="100" Margin="49,309,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="184.017,167,0,0" VerticalAlignment="Top" Width="146" Height="45" Grid.Column="2" SelectionChanged="CboBet_SelectionChanged">
+        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="196,117,0,0" VerticalAlignment="Top" Width="146" Height="45" Grid.Column="2" Text="Choose Bet" IsEditable="True" IsReadOnly="True" SelectionChanged="CboBet_SelectionChanged" FontSize="22" FontWeight="Bold">
             <ComboBoxItem Content="$1" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Two" Content="$2" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Three" Content="$3" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Four" Content="$4" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Five" Content="$5" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
         </ComboBox>
-        <Label Content="Bet Choice" HorizontalAlignment="Left" Margin="218.017,177,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <Button x:Name="BtnPayTable" Content="View Pay Tables" HorizontalAlignment="Left" Margin="196.017,277,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="BtnPayTable_Click" Grid.Column="2"/>
+        <Label Content="Bet Choice" HorizontalAlignment="Left" Margin="223,91,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button x:Name="BtnPayTable" Content="View Pay Tables" HorizontalAlignment="Left" Margin="199,189,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="BtnPayTable_Click" Grid.Column="2"/>
+        <TextBox x:Name="txtWinnings" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="196,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
