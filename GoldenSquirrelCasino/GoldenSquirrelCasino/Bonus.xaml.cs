@@ -55,7 +55,7 @@ namespace GoldenSquirrelCasino
         private void WindowBonus_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show($"YOU WON!!!!!!!");
-            //WindowBonus.Close(); 
+            WindowBonus.Close(); 
 
             
         }
