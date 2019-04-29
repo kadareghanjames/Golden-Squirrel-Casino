@@ -15,7 +15,14 @@
             <ColumnDefinition Width="73*"/>
             <ColumnDefinition Width="359*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="BtnSpin" Content="Spin" HorizontalAlignment="Left" Margin="196,11,0,0" VerticalAlignment="Top" Width="134" Height="58" Click="Spin_Click" Grid.Column="2"/>
+        <Button x:Name="BtnSpin" Content="Spin" HorizontalAlignment="Left" Margin="199.4,11,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="Spin_Click" Grid.Column="2" FontSize="22" FontWeight="Bold">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFDC0D0D" Offset="0.682"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
         <Image x:Name="Img1" HorizontalAlignment="Left" Height="126" Margin="70,11,0,0" VerticalAlignment="Top" Width="126"/>
         <Image x:Name="Img2" HorizontalAlignment="Left" Height="126" Margin="201,11,0,0" VerticalAlignment="Top" Width="126"/>
         <Image x:Name="Img3" HorizontalAlignment="Left" Height="126" Margin="332,11,0,0" VerticalAlignment="Top" Width="126" Grid.ColumnSpan="3"/>
@@ -25,16 +32,18 @@
         <Image x:Name="Img7" HorizontalAlignment="Left" Height="126" Margin="70,273,0,0" VerticalAlignment="Top" Width="126"/>
         <Image x:Name="Img8" HorizontalAlignment="Left" Height="126" Margin="201,273,0,0" VerticalAlignment="Top" Width="126"/>
         <Image x:Name="Img9" HorizontalAlignment="Left" Height="126" Margin="332,273,0,0" VerticalAlignment="Top" Width="126" Grid.ColumnSpan="3"/>
-        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="184,92,0,0" VerticalAlignment="Top" Width="146" Height="45" Grid.Column="2" Text="Choose Bet" IsEditable="True" IsReadOnly="True" SelectionChanged="CboBet_SelectionChanged" FontSize="22" FontWeight="Bold">
+        <ComboBox x:Name="CboBet" HorizontalAlignment="Left" Margin="198.4,92,0,0" VerticalAlignment="Top" Width="131" Height="45" Grid.Column="2" Text="Choose Bet" IsEditable="True" IsReadOnly="True" SelectionChanged="CboBet_SelectionChanged" FontSize="20" FontWeight="Bold" Background="#FFFFD300">
             <ComboBoxItem Content="$1" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Two" Content="$2" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Three" Content="$3" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Four" Content="$4" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
             <ComboBoxItem x:Name="Five" Content="$5" HorizontalAlignment="Left" Width="144" HorizontalContentAlignment="Center"/>
         </ComboBox>
-        <Button x:Name="BtnPayTable" Content="View Pay Tables" HorizontalAlignment="Left" Margin="199,158,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="BtnPayTable_Click" Grid.Column="2"/>
-        <TextBox x:Name="txtWinnings" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="210,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
-        <TextBox x:Name="txtFreeSpins" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="210,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Button x:Name="BtnPayTable" Content="View Pay Tables" HorizontalAlignment="Left" Margin="199,158,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="BtnPayTable_Click" Grid.Column="2" FontSize="16" FontWeight="Bold" Background="#FFFFD300"/>
+        <TextBox x:Name="txtWinnings" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="199.4,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" IsReadOnly="True" Background="#FFFFD300" FontWeight="Bold" FontSize="10"/>
+        <TextBox x:Name="txtFreeSpins" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="199.4,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" IsReadOnly="True" Background="#FFFFD300" FontSize="15"/>
+        <Label Content="Winings:" Grid.Column="2" HorizontalAlignment="Left" Margin="138.4,230,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Free Spins:" Grid.Column="2" HorizontalAlignment="Left" Margin="127.4,273,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Window>
