@@ -19,7 +19,7 @@
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="#FFDC0D0D" Offset="0.682"/>
+                    <GradientStop Color="#FFFFD300" Offset="0.682"/>
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
@@ -41,7 +41,7 @@
         </ComboBox>
         <Button x:Name="BtnPayTable" Content="View Pay Tables" HorizontalAlignment="Left" Margin="199,158,0,0" VerticalAlignment="Top" Width="131" Height="58" Click="BtnPayTable_Click" Grid.Column="2" FontSize="16" FontWeight="Bold" Background="#FFFFD300"/>
         <TextBox x:Name="txtWinnings" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="199.4,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" IsReadOnly="True" Background="#FFFFD300" FontWeight="Bold" FontSize="10"/>
-        <TextBox x:Name="txtFreeSpins" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="199.4,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" IsReadOnly="True" Background="#FFFFD300" FontSize="15"/>
+        <TextBox x:Name="txtFreeSpins" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="199.4,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" IsReadOnly="True" Background="#FFFFD300" FontWeight="Bold"/>
         <Label Content="Winings:" Grid.Column="2" HorizontalAlignment="Left" Margin="138.4,230,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Free Spins:" Grid.Column="2" HorizontalAlignment="Left" Margin="127.4,273,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
